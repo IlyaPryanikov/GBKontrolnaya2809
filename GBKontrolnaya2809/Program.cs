@@ -1,6 +1,6 @@
 ﻿
 
-string[] array1 = { "hello", "2", "world", ":-)", "123" , "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan"}; // Задаем наш массив
+string[] array1 = { "hello", "2", "world", ":-)", "123" , "1234", "1567", "-2", "computer science", "Russia", "Denmark", "Kazan", "FCK"}; // Задаем наш массив
 int length = 0; // Обнуляем счетчик элементов, длина которых <= 3 символам
 
 int ArrayElementsCountLessThanThree(string[] array) // Считаем количество элементов массива,  длина которых <= 3 символам
@@ -12,15 +12,15 @@ int ArrayElementsCountLessThanThree(string[] array) // Считаем колич
     return length;
 }
 
-void ArrayElementsWriteOut(string[] array,string[] array1) //Копируем элементы  <= 3 символам в новый массив
+void ArrayElementsWriteOut(string[] array1,string[] array2) //Копируем элементы  <= 3 символам в новый массив
 {
     int i = 0;
     int j = 0;
-    while(i < array.Length)
+    while(i < array1.Length)
     {
-        if (array[i].Length <= 3) 
+        if (array1[i].Length <= 3) 
         {
-            array1[j] = array[i];
+            array2[j] = array1[i];
             j++;
         }
         i++;
